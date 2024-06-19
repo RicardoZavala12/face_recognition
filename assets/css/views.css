@@ -1,0 +1,27 @@
+.drop-zone {
+    max-width: 100%;
+    padding: 20px;
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.drop-zone--over {
+    background-color: #e9ecef;
+}
+.drop-zone__input {
+    display: none;
+}
+
+.footer {
+
+    color: white;
+    text-align: center;
+    padding: 0 rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+}
