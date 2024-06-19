@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .falling-img {
+    width: 150;
+    height: 150px;
+    animation: fallDown 2.9s ease-out;
+    position: absolute;
+    align-items: center;
+    top: 50px; /* Ajusta la posición vertical según tus necesidades */
+  }
+
+  .falling-txt {
+    width: 150;
+    height: 150px;
+    animation: fallDown 2.9s ease-out;
+    align-items: center;
+    top: 40px; /* Ajusta la posición vertical según tus necesidades */
+  }
+
+  #falling-btn {
+    animation: fallDown 0.8s ease-out;
+    align-items: center;
+    top: 40px; /* Ajusta la posición vertical según tus necesidades */
+  }
+
+  @keyframes fallDown {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .container {
+    background-color: transparent;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center; /* Centrar contenido horizontalmente */
+  }
+
+  .centered-btn {
+    margin-top: 10px; /* Espacio superior para separar del contenido anterior */
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top, hsl(239, 90%, 30%), #f0f0f0); /* Azul celeste hacia arriba */
+  }
+  .modal-content, .sidebar, #modal-content {
+  background-color: rgba(255, 255, 255, 0.1); /* Color transparente */
+  border-radius: 15px;
+  border: none;
+  backdrop-filter: blur(10px); /* Aplica un efecto de desenfoque */
+} 
+
+@font-face {
+  font-family: 'Wellbutrin';
+  src: url('fonts/Welbut__.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#txt-deg {
+  background: linear-gradient(to right, red, orange, yellow); /* Ejemplo de degradado lineal */
+  -webkit-background-clip: text; /* Para navegadores basados en WebKit (Chrome, Safari) */
+  background-clip: text; /* Para otros navegadores */
+  color: transparent; /* El color del texto se vuelve transparente */
+}
+
+
+/* CSS panel admin logs */
