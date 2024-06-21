@@ -1,5 +1,5 @@
 <?php
-include_once("panel_structure.php");
+include_once("./views/panel_structure.php");
 ?>
 
     <style>
@@ -22,22 +22,22 @@ include_once("panel_structure.php");
                 </tr>
             </thead>
             <tbody>
+            <?php if ($admins): ?>
+                <?php foreach ($admins as $id => $admin): ?>
                 <tr>
-                    <td>Juan Pérez</td>
-                    <td>juan.perez@example.com</td>
-                    <td>Juan Pérez</td>
-                    <td>juan.perez@example.com</td>
+                    <td hidden><?php echo $id; ?></td>
+                    <td><?php echo $admin['nombre']; ?></td>
+                    <td><?php echo $admin['matricula']; ?></td>
+                    <td><?php echo $admin['email']; ?></td>
+                    <td><?php echo $admin['fecha_registro']; ?></td>
                     <td>
-                        <button class="btn btn-warning btn-sm custom-btn">Editar</button>
-                        <button class="btn btn-danger btn-sm custom-btn">Eliminar</button>
+                        <a href="index.php?controller=admin&action=edit&id=<?php echo $id; ?>"><button class="btn btn-warning btn-sm custom-btn">Editar</button></a>
+                        <a href="index.php?controller=admin&action=destroy&id=<?php echo $id; ?>"><button class="btn btn-danger btn-sm custom-btn">Eliminar</button></a>
                     </td>
                 </tr>
+                <?php endforeach; ?>
+            <?php endif; ?>
             </tbody>
         </table>
     </div>
 
-
-    
-    <?php
-include_once("footer.php");
-?>

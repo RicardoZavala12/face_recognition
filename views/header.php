@@ -3,18 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>SecureFace | Admin Panel</title>
-  <link rel="icon" href="../assets/img/softec.png" type="image/x-icon">
-  <link rel="icon" href="./assets/img/softec.png" type="image/x-icon">
-  <link href="../assets/css/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link href="./assets/css/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link href="../assets/css/softec.css" rel="stylesheet">
-  <link href="./assets/css/softec.css" rel="stylesheet">
-  <link href="../assets/css/logs.css" rel="stylesheet">
-  <link href="./assets/css/logs.css" rel="stylesheet">
+  <!-- <link rel="icon" href="http://localhost/inte/assets/img/softec.png" type="image/x-icon"> -->
+  <link rel="icon" href="/inte/assets/img/softec.png" type="image/x-icon">
+  
+  <!-- <link href="http://localhost/inte/assets/css/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+  <link href="/inte/assets/css/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <!-- <link href="http://localhost/inte/assets/css/softec.css" rel="stylesheet"> -->
+  <link href="/inte/assets/css/softec.css" rel="stylesheet">
+  
+  <!-- <link href="http://localhost/inte/assets/css/logs.css" rel="stylesheet"> -->
+  <link href="/inte/assets/css/logs.css" rel="stylesheet">
 
-  <script src="../assets/css/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <script src="../assets/js/views.js"></script>
-  <link href="../assets/css/views.css" rel="stylesheet">
+  <!-- <script src="http://localhost/inte/assets/css/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+  <script src="/inte/assets/css/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <!-- <script src="http://localhost/inte/assets/js/views.js"></script> -->
+  <script src="/inte/assets/js/views.js"></script>
+  <script src="/inte/assets/js/assets.js"></script>
+
+  <!-- <link href="http://localhost/inte/assets/css/views.css" rel="stylesheet"> -->
+  <link href="/inte/assets/css/views.css" rel="stylesheet">
+
+
   
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <symbol id="bootstrap" viewBox="0 0 118 94">

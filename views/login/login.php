@@ -1,8 +1,10 @@
 <?php
-include_once("header.php");
+include_once("./views/header.php");
 ?>
 
-<img src="../assets/img/softec.png" alt="SofTec" class="falling-img"> 
+<!-- <img src="http://localhost/inte/assets/img/softec.png" alt="SofTec" class="falling-img">  -->
+
+<img src="/inte/assets/img/softec.png" alt="SofTec" class="falling-img"> 
 <body>  
   <div class="container">
     <!-- Botón para abrir el modal -->
@@ -12,9 +14,7 @@ include_once("header.php");
     <button id="falling-btn" type="button" class="btn btn-info" data-bs-toggle="modal" style="color: white" data-bs-target="#exampleModal">
       <b>Acceder al panel</b>
     </button>
-    <?php
-include_once("footer.php");
-?>
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -38,14 +38,13 @@ include_once("footer.php");
           <div class="col-sm-5" style="width: 100%;">  <input type="password" class="form-control" name="pass" placeholder="Contraseña" id="pass" required>
         </div>
       </div>
-      <a href="http://localhost/inte/views/admin_create.php"><button style="color: white" type="button" class="btn btn-info" id="btnSiguiente" >Iniciar</button></a>
+      <a href="#"><button style="color: white" type="button" class="btn btn-info" id="btnSiguiente" >Iniciar</button></a>
     </form>
   </div>
 </div>
-  <script src="../assets/css/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <script src="./assets/css/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <script src="../assets/js/assets.js"></script>
-  <script src="./assets/js/assets.js"></script>
+  <!-- <script src="http://localhost/inte/assets/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+  <script src="/inte/assets/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 
 
 
