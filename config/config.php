@@ -1,5 +1,6 @@
 <?php
 define('API_URL', 'http://localhost:5000/api/admins'); 
+<<<<<<< HEAD
 define('API_URL_USER', 'http://localhost:5000/api/usuario'); 
 define('API_URL_LOGS', 'http://localhost:5000/api/face_recognition'); 
 
@@ -10,4 +11,6 @@ define('BTN_USUARIO_LIST','http://localhost/inte/index.php?controller=usuario&ac
 
 define('BTN_ADMIN_CREATE','http://localhost/inte/index.php?controller=admin&action=create');
 define('BTN_USUARIO_CREATE','http://localhost/inte/index.php?controller=usuario&action=create');
+=======
+>>>>>>> 76685700b59968b294da1a4825742862cdaabebb
 ?>
