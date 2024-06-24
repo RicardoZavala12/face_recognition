@@ -11,9 +11,7 @@ Se ocupa:
   Reco_FacialARDUINOGET3v2.py
 
 **Falta Juntar los 2 programas de Python
-**Falta agregar Login y darle estilos a tabla de Face
 **Falta Agregar matriculas a código de Arduino
-**Falta limpiar código y borrara archivos de Bootstrap
 **HACER SCRIPPT DEL VIDEO
 
 
