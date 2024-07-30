@@ -1,0 +1,51 @@
+name: CI/CD
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      API_URL_LOGS: ${{ secrets.API_URL_LOGS }}
+      API_URL: ${{ secrets.API_URL }}
+      DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+      DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+      SERVER_IP: ${{ secrets.SERVER_IP }}
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+
+      - name: Install dependencies
+        run: composer install --no-progress --no-suggest
+
+      - name: Run linter
+        run: |
+          if ! command -v phplint > /dev/null; then
+            composer global require phplint/phplint;
+          fi
+          phplint .
+
+      - name: Run tests
+        run: phpunit --configuration phpunit.xml
+
+      - name: Deploy to Server
+        run: |
+          ssh -i $DEPLOY_KEY $DEPLOY_USER@$SERVER_IP "cd /path/to/your/site && git pull && composer install --no-dev && php artisan migrate --force"
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+
